@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitória: Contato</title>
+</head>
+<body>
+    <header>
+        <img src="esflag.png" width="100%" height="70"> <!-- ii. Banner; -->
+        <table>
+            <tr>
+                <td><img src="vitoria.png" width="70"></td> <!-- x. Imagens; -->
+                <td><a href="main.html">Página Principal</a></td> <!-- xiv. Links; -->
+                <td>|</td>
+                <td><a href="cityhistory.html">História da Cidade</a></td>
+                <td>|</td>
+                <td><a href="multimedia.html">Multimidia</a></td>
+                <td>|</td>
+                <td><a href="#">Contato</a></td>
+                <td><div id="divBusca">
+                <input type="text" id="txtBusca"placeholder="Buscar..."/>
+                <id="btnBusca" alt="Buscar"/>
+                </div></td>
+                <td><div><button>Buscar</button></div></td> <!-- xiii. Botões; -->
+            </tr>
+        </table>
+        <h1>Vitória - ES</h1> <!-- i. Cabeçalhos; -->
+      </header>
+    <main>
+        <h2>Entre em contato</h2>
+        <form method="get">
+            <section>
+                <label for="name"><small>Nome:</small></label>
+                <input type="text" id="name" name="userName" placeholder="Seu nome" autocomplete="on" required>
+            </section> <br>
+            <section>
+                <label for="email"><small>Email:</small></label>
+                <input type="email" id="email" name="userEmail" placeholder="Seu email" autocomplete="on" required>
+            </section> <br>
+            <section>
+                <label for="tel"><small>Celular:</small></label>
+                <input type="tel" id="tel" name="userTel" minlength="11" maxlength="11" pattern="[0-9]{2}-[0-9]{5]-[0-9]{4}" placeholder="Com DDD sem espaços" autocomplete="on" required>
+            </section> <br>
+            <section>
+                <label for="gender"><small>Qual seu gênero:</small></label>
+                <select id="gender" name="userGender" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="masc">Masculino</option>
+                    <option value="fem">Feminino</option>
+                    <option value="other">Outro</option>
+                    <option value="didnttell">Prefiro não indicar</option>
+                </select>
+            </section> <br>
+            <section>
+                <label for="visit"><small>Já visitou a cidade de Vitória?</small></label> <br>
+                <input type="radio" name="userVisit" id="userVisitYes" value="yes">
+                <label for="userVisitYes"><small>Sim</small></label> <br>
+                <input type="radio" name="userVisit" id="userVisitNo" value="no">
+                <label for="userVisitNo"><small>Não</small></label>
+            </section> <br>
+            <section>
+                <label for="reason"><small>Motivo do contato:</small></label> <br>
+                <input type="checkbox" id="work" name="workWith">
+                <label for="work"><small>Trabalhe conosco</small></label> <br>
+                <input type="checkbox" id="bug" name="siteBug">
+                <label for="bug"><small>Erro no site</small></label> <br>
+                <input type="checkbox" id="content" name="siteContent">
+                <label for="content"><small>Erro de conteúdo</small></label> <br>
+                <input type="checkbox" id="otherreason" name="otherReason">
+                <label for="otherreason"><small>Outro</small></label> <br>
+            </section> <br>
+            <section>
+                <label for="message"><small>Escreva sua mensagem</small></label> <br>
+                <textarea id="message" name="userMessage" placeholder="Escreva aqui..." rows="10" cols="50" autocomplete="on" required></textarea>
+            </section> <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main> <br>
+    <aside>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59878.98547547565!2d-40.320809034974474!3d-20.282188053135734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!5e0!3m2!1spt-BR!2sbr!4v1664027630783!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="on" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+    <footer>
+        <!-- v. Rodapé; -->
+        <h6>v0.1</h6>
+        <img src="esflag.png" width="100%" height="70">
+    </footer>
+</body>
+</html>
