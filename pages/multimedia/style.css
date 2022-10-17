@@ -1,0 +1,29 @@
+.multimedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.place__line {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    overflow: hidden;
+}
+
+.card img {
+    transition: transform .9s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    filter: brightness(90%)
+}

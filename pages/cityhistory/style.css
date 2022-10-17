@@ -1,0 +1,110 @@
+.containerFlex {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    display: block;
+    text-align: justify;
+    padding: 10px 20%;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+span {
+    display: block;
+    text-align: center;
+}
+
+.containerText {
+    display: flex;
+    width: 100vh;
+    justify-content: center;
+    justify-items: center;
+    padding: 100px 20% 0;
+}
+
+.cityHistory h1 {
+    margin-bottom: 50px;
+}
+
+.figure {
+    margin-bottom: 50px;
+}
+
+.imageTop {
+    display: block;
+    animation: image 5s linear;
+}
+
+.figure img {
+    height: 700px;
+    width: auto;
+}
+
+figcaption {
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-align: left;
+}
+
+#figuresCenter {
+    height: 100%;
+    width: auto;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLeft,
+.imageRight {
+    display: block;
+    text-align: left;
+}
+
+.imageLeft img {
+    height: 380px;
+    width: auto;
+    margin: 0 30px;
+}
+
+.imageRight img {
+    height: 380px;
+    width: auto;
+    margin: 0 30px;
+}
+
+.cityHistory Span {
+    text-align: left;
+    padding-left: 220px;
+}
+
+@keyframes image {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    100% {
+        transform: translateX(700px);
+        opacity: 100%;
+    }
+}
